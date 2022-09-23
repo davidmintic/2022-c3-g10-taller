@@ -1,0 +1,12 @@
+/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Dominio/bin/Debug/net6.0/Taller.App.Dominio.deps.json
+/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Dominio/bin/Debug/net6.0/Taller.App.Dominio.dll
+/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Dominio/bin/Debug/net6.0/Taller.App.Dominio.pdb
+/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Dominio/obj/Debug/net6.0/Taller.App.Dominio.csproj.AssemblyReference.cache
+/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Dominio/obj/Debug/net6.0/Taller.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Dominio/obj/Debug/net6.0/Taller.App.Dominio.AssemblyInfoInputs.cache
+/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Dominio/obj/Debug/net6.0/Taller.App.Dominio.AssemblyInfo.cs
+/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Dominio/obj/Debug/net6.0/Taller.App.Dominio.csproj.CoreCompileInputs.cache
+/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Dominio/obj/Debug/net6.0/Taller.App.Dominio.dll
+/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Dominio/obj/Debug/net6.0/refint/Taller.App.Dominio.dll
+/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Dominio/obj/Debug/net6.0/Taller.App.Dominio.pdb
+/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Dominio/obj/Debug/net6.0/ref/Taller.App.Dominio.dll

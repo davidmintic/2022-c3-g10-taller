@@ -1,0 +1,56 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Taller.App.Front
+build_property.RootNamespace = Taller.App.Front
+build_property.ProjectDir = /Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Front/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Front
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Front/Pages/Cuenta/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3VlbnRhL0xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Front/Pages/Cuenta/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3VlbnRhL1JlZ2lzdHJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Front/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Front/Pages/GestionMecanico/GestionMecanico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvR2VzdGlvbk1lY2FuaWNvL0dlc3Rpb25NZWNhbmljby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Front/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Front/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Front/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Front/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Front/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/davidperezarias/Desktop/ciclo3/proyecto-g9/Taller.App/Taller.App.Front/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qr8e6xy82z

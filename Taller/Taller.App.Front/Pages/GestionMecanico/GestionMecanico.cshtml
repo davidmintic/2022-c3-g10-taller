@@ -1,0 +1,193 @@
+﻿@page
+@model Taller.App.Front.Pages.GestionMecanicoModel
+@{
+}
+
+<div class="clas-contain-title d-flex justify-content-between">
+
+    <div style="display: flex; align-items: center;">
+        <h6 class="mb-0 me-3">Mecánicos</h6>
+        <i class="bi bi-person-plus clas-icon-add" title="Agregar mecánico" data-bs-toggle="modal"
+            data-bs-target="#exampleModal" data-bs-whatever="@@mdo"></i>
+    </div>
+
+
+    <nav class="navbar navbar-light">
+        <form method="post" class="form-inline" style="display: flex;">
+            <input name="textBuscar" class="form-control mr-sm-2" type="search" placeholder="Escribe aquí"
+                aria-label="Search" asp-for="@Model.textBuscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" asp-page-handler="Buscar">Buscar</button>
+        </form>
+    </nav>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col" class="text-end">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+        @foreach (var m in Model.listaMecanicos)
+        {
+            <tr>
+                <td>@m.MecanicoId</td>
+                <td>@m.Nombre</td>
+                <td>@m.Telefono</td>
+                <td class="text-end" style="display: flex; justify-content: flex-end;">
+
+                    @if (@Model.mecanicoActual != null && @Model.mecanicoActual.MecanicoId != "")
+                    {
+
+                        <button class="bi bi-pencil-square class-icon-edit clas-no-sty-button" title="Editar mecánico"
+                    id="idmodal" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@@mdo"></button>
+                    }
+                    else
+                    {
+                        <form method="POST">
+
+                            <button class="bi bi-pencil-square class-icon-edit clas-no-sty-button" title="Editar mecánico"
+                        type="submit" asp-route-id="@m.MecanicoId" asp-page-handler="SelectEdit"></button>
+                        </form>
+
+                    }
+
+                    <form method="POST">
+                        <button class="bi bi-trash-fill class-icon-delete clas-no-sty-button" title="Eliminar mecánico"
+                        type="submit" asp-route-id="@m.MecanicoId" asp-page-handler="Del"></button>
+                    </form>
+
+
+
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+
+<div class="column col-md-4">
+    <label for="">Mecanico a asignar:</label>
+    <select class="form-select" aria-label="Default select example" name="MecanicoId">
+        @foreach (var m in Model.listaMecanicos)
+        {
+            <option value="@m.MecanicoId">@m.Nombre</option>
+        }
+    </select>
+</div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                @if (@Model.modeEdition)
+                {
+                    <h5 class="modal-title" id="exampleModalLabel">Editar mécanico</h5>
+                }
+                else
+                {
+                    <h5 class="modal-title" id="exampleModalLabel">Agregar mecánico</h5>
+                }
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="px-4" method="POST">
+
+                    <div class="row">
+                        <div class="mb-3 col-6">
+                            <label for="recipient-name" class="col-form-label">Id:</label>
+                            <input type="text" class="form-control" id="recipient-name"
+                                asp-for="@Model.mecanicoActual.MecanicoId" name="MecanicoId">
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="recipient-name" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="recipient-name"
+                                asp-for="@Model.mecanicoActual.Nombre" name="Nombre">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-3 col-6">
+                            <label for="recipient-name" class="col-form-label"> Teléfono:</label>
+                            <input type="tel" class="form-control" id="recipient-name"
+                                asp-for="@Model.mecanicoActual.Telefono" name="Telefono">
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="recipient-name" class="col-form-label">Fecha nacimiento:</label>
+                            <input type="date" class="form-control" id="recipient-name"
+                                asp-for="@Model.mecanicoActual.FechaNacimiento" name="FechaNacimiento">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-3 col-6">
+                            <label for="recipient-name" class="col-form-label">Dirección:</label>
+                            <input type="text" class="form-control" id="recipient-name"
+                                asp-for="@Model.mecanicoActual.Direccion" name="Direccion">
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="recipient-name" class="col-form-label">Nivel de estudio:</label>
+                            <select name="" id="" class="form-select" asp-for="@Model.mecanicoActual" NivelEstudio"
+                                name="NivelEstudio">
+                                <option value="Bachiller">Bachiller</option>
+                                <option value="Técnico">Técnico</option>
+                                <option value="Tecnólogo">Tecnólogo</option>
+                                <option value="Profesional">Profesional</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-3 col-12">
+                            <label for="recipient-name" class="col-form-label">Contraseña:</label>
+                            <input type="password" class="form-control" id="recipient-name"
+                                asp-for="@Model.mecanicoActual.Contrasenia" name="Contrasenia">
+                        </div>
+
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+
+                        @if (@Model.modeEdition)
+                        {
+                            <button type="submit" class="btn btn-primary" asp-page-handler="Edit">Editar</button>
+                        }
+                        else
+                        {
+                            <button type="submit" class="btn btn-primary" asp-page-handler="Add">Agregar</button>
+                        }
+
+
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+@if (@Model.modeEdition)
+{
+    <script type="text/javascript">
+
+    setTimeout(() => {
+        let button = document.getElementById("idmodal");
+        button.click();
+    }, 500);
+</script>
+}

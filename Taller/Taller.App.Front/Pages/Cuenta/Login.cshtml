@@ -1,0 +1,23 @@
+﻿@page
+@model Taller.App.Front.Pages.LoginModel
+@{
+}
+
+<div class="card clsCard" style="width: 18rem">
+    <div class="card-body">
+        <h1 id="idTituloLogin">@Model.tituLogin</h1>
+        <div id="idContenedorCampos">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Usuario</label>
+                <input type="email" class="form-control" id="idUsuario" placeholder="name@example.com" />
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">contraseña</label>
+                <input type="password" class="form-control" id="idContrasenia" />
+            </div>
+        </div>
+        <button type="button" onclick="mostrarInformacion()" class="btn btn-info">
+            Iniciar sesión
+        </button>
+    </div>
+</div>
